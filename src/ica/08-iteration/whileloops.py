@@ -16,6 +16,20 @@ def print_every_other(x):
 
     # when indentation stops, while loop is over
     print("Done!")
+#x= input("Enter a number: ")
+#x=int(x)
+
+def print_every_fifth(x):
+    """
+    Prints every other value from a given number down to zero
+    """
+    while x >= 0:      # x is the loop variable
+        print(x)
+        x = x - 5
+
+    # when indentation stops, while loop is over
+    print("Done!")
+print(print_every_fifth(x))
 
 
 def square_user_nums():
@@ -23,14 +37,17 @@ def square_user_nums():
     Reads in numbers from the user, stopping when the user enters a negative
     number. For each user number, it prints the number and the square of
     the number.
+
+    if comment on the first pair, then user_num will not be defined
+    if comment the second pair, the loop will keep going forever
     """
+
     user_inp = input("Enter the next number (negative to quit): ")
     user_num = int(user_inp)
     while user_num >= 0:
         print(user_num, "squared is", user_num ** 2)
         user_inp = input("Enter the next number (negative to quit): ")
         user_num = int(user_inp)
-
 
 def sum_to_n(top_num):
     """
